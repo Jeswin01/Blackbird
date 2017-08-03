@@ -1,0 +1,43 @@
+{
+  "welcomeFile": "/webapp/index.html",
+  "routes": [
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources",
+        "version": "1.44.14"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources",
+        "version": "1.44.14"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+		"path": "/slack",
+		"target": {
+			"type": "destination",
+			"name": "slack_demo",
+			"entryPath": "/"
+		},
+		"description": "Slack"
+	},{
+      "path": "/destinations/Blackbird_01",
+      "target": {
+        "type": "destination",
+        "name": "Blackbird_01"
+      },
+      "description": "Blackbird"
+    }
+
+  ],
+  "sendWelcomeFileRedirect": true
+}

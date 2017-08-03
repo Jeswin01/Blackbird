@@ -1,0 +1,25 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	controllerName="BlackBird_v1.controller.excel" xmlns="sap.m" xmlns:tnt="sap.tnt" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout"
+	xmlns:t="sap.ui.table">
+	<Page showHeader="false" showFooter="true">
+		<OverflowToolbar id="otbSubheader">
+			<Button text="Upload CSV" type="Transparent" icon="sap-icon://upload" iconFirst="true" visible="true" press="onConfirmDialog"/>
+			<Button text="Upload XLSX" type="Transparent" icon="sap-icon://upload" iconFirst="true" visible="true" press="onUploadXLSX"/>
+			<ToolbarSpacer/>
+			<Button id="editButton" type="Transparent" text="Edit" visible="true" press="onEdit"/>
+			<Button id="saveButton" type="Transparent" text="Save" visible="false" press="onSave"/>
+			<Button id="cancelButton" type="Transparent" text="Cancel" visible="false" press="onCancel"/>
+		</OverflowToolbar>
+		<Table id="Excel2" mode="None"></Table>
+		<footer>
+			<Bar class="Header_Bar">
+				<contentLeft/>
+				<contentMiddle/>
+				<contentRight>
+					<Button text="Download" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="onDataExport" class="Header_Button" />
+					<Button text="Upload to HCP" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="save" class="Header_Button" />
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

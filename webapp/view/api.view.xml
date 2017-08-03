@@ -1,0 +1,27 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	controllerName="BlackBird_v1.controller.api" xmlns="sap.m" xmlns:tnt="sap.tnt" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout"
+	xmlns:t="sap.ui.table">
+	<Page showHeader="false">
+		<SearchField width="auto" value="{/surl}" id="inputUrl" showSearchButton="true" class="sapUiSmallMarginBegin sapUiTinyMarginEnd"
+			placeholder="Enter company code ..." search="onPressNavToDetail"/>
+		<content>
+			<Table id="Excel2" mode="None">
+				<headerToolbar>
+					<Toolbar>
+						<Text id="comp" class="sapUiSmallMarginBegin"></Text>
+					</Toolbar>
+				</headerToolbar>
+			</Table>
+		</content>
+		<footer>
+			<Bar class="Header_Bar">
+				<contentLeft/>
+				<contentMiddle/>
+				<contentRight>
+					<Button text="Download" type="Default" iconFirst="true" width="auto" press="onExport" enabled="true" visible="true" iconDensityAware="false" class="Header_Button" />
+					<Button text="Upload to HCP" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="save" class="Header_Button" />
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

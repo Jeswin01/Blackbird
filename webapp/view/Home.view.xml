@@ -1,0 +1,41 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns:core="sap.ui.core" controllerName="BlackBird_v1.controller.Home" xmlns:tnt="sap.tnt" xmlns="sap.m" xmlns:l="sap.ui.layout">
+	<App id="app">
+		<Page showHeader="false">
+			<tnt:ToolHeader class="Header_Bar">
+				<Image src="/webapp/image/blackbird_logo.png" press="onMenuClick"/>
+				<ToolbarSpacer/>
+				<ToolbarSpacer/>
+				<Text text="Excel To HCP" class="Header_Text"/>
+				<ToolbarSpacer/>
+				<ToolbarSpacer/>
+				<Text id="text" class="Header_Text"></Text>
+				<core:Icon src="sap-icon://log" class="sapUiSmallMargin Header_Text" press="onLogClick"/>
+			</tnt:ToolHeader>
+			<SplitApp id="SplitAppDemo" initialDetail="detail1" initialMaster="master" class="Master_LeftSide">
+				<detailPages>
+					<mvc:XMLView viewName="BlackBird_v1.view.excel" id="detail1"></mvc:XMLView>
+					<mvc:XMLView viewName="BlackBird_v1.view.api" id="detail2"></mvc:XMLView>
+					<mvc:XMLView viewName="BlackBird_v1.view.iotview" id="detail3"></mvc:XMLView>
+					<mvc:XMLView viewName="BlackBird_v1.view.api" id="detail21"></mvc:XMLView>
+				</detailPages>
+				<masterPages>
+					<Page id="master" showHeader="false" class="Side_Navigation">
+						<content>
+							<List itemPress="onListItemPress" class="masterpage">
+								<items>
+									<StandardListItem title="ExcelSheet to HCP" class="Side_Navigation_Icon Side_Navigation_Text" icon="sap-icon://excel-attachment"
+										type="Active" custom:to="detail1"/>
+									<StandardListItem title="API to HCP" icon="sap-icon://world" class="Side_Navigation_Icon Side_Navigation_Text" type="Active"
+										custom:to="detail2"/>
+									<!--<StandardListItem title="IOT to HCP" icon="sap-icon://example" class="Side_Navigation_Icon Side_Navigation_Text" type="Active"-->
+									<!--	custom:to="detail3"/>-->
+								</items>
+							</List>
+						</content>
+					</Page>
+				</masterPages>
+			</SplitApp>
+		</Page>
+	</App>
+</mvc:View>

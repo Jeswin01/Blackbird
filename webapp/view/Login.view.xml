@@ -1,0 +1,38 @@
+<mvc:View controllerName="BlackBird_v1.controller.Login" xmlns:u="sap.ui.unified" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core"
+	xmlns:t="sap.ui.table" xmlns:tnt="sap.tnt" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="viewPadding">
+	<App id="app">
+		<pages >
+			<Page>
+				<headerContent>
+					<Toolbar class="Header_Bar">
+						<Image src="/webapp/image/blackbird_logo.png" press="onMenuClick"/>
+						<ToolbarSpacer/>
+						<Text text="Super Admin Page" class="Header_Text"/>
+						<ToolbarSpacer/>
+						<ToolbarSpacer/>
+					</Toolbar>
+				</headerContent>
+				<content >
+					<l:Grid defaultSpan="L4 M3 S12">
+						<l:content >
+							<Panel backgroundDesign="Transparent"></Panel>
+							<Panel backgroundDesign="Solid" class="sapUiLargeMarginTop">
+								<layoutData>
+									<l:GridData span="L4 M6 S12"></l:GridData>
+								</layoutData>
+								<Label text="Email" class="sapUiSmallMarginTop"></Label>
+								<Input type="Text" id="ee" valueLiveUpdate="true" liveChange="validate"></Input>
+								<Label text="Password"></Label>
+								<Input type="Password" id="pp" valueLiveUpdate="true" liveChange="validate"></Input>
+								<Button text="Login" press="onClick" class="Header_Text Header_Button"></Button>
+								<Button text="Sign Up" press="onSignUpClick" class="sapUiSmallMarginBegin Header_Text Header_Button"></Button>
+							</Panel>
+							<Panel backgroundDesign="Transparent"></Panel>
+						</l:content>
+					</l:Grid>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

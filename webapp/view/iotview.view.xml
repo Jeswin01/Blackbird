@@ -1,0 +1,61 @@
+<mvc:View controllerName="BlackBird_v1.controller.iotview" xmlns:u="sap.ui.unified" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core"
+	xmlns:t="sap.ui.table" xmlns:tnt="sap.tnt" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="viewPadding">
+	<Page showHeader="false" showFooter="true">
+		<content>
+			<Button text="Upload IOT ranking data" class="sapUiSmallMarginBegin" press="onConfirmDialog"/>
+			<Text text="{category}"/>
+			<Table items="{/}" id="idTable">
+				<headerToolbar>
+					<Toolbar>
+						<SearchField liveChange="onSearch"></SearchField>
+						<Button icon="sap-icon://sort" press="onSort"/>
+						<Button icon="sap-icon://refresh" press="positionSort"/>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column id="category">
+						<Text text="category"/>
+					</Column>
+					<Column id="google">
+						<Text text="# of Google searches"/>
+					</Column>
+					<Column id="linkedin">
+						<Text text="# of Linkedin posts"/>
+					</Column>
+					<Column id="twitter">
+						<Text text="# of tweets"/>
+					</Column>
+					<Column id="position">
+						<Text text="Position"/>
+					</Column>
+					<Column>
+						<Text text="Total Score"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<Text text="{category}"></Text>
+							<Text text="{# of Google searches}"/>
+							<Text text="{# of Linkedin posts}"/>
+							<Text text="{# of tweets}"/>
+							<Text text="{Position}"/>
+							<Text text="{Total Score}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<footer visible="true">
+			<Bar class="Header_Bar">
+				<contentLeft/>
+				<contentMiddle/>
+				<contentRight>
+					<!--<Button text="Download" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>-->
+					<Button text="Upload to HCP" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" class="Header_Button" />
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

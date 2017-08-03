@@ -1,0 +1,41 @@
+<mvc:View controllerName="BlackBird_v1.controller.Signup" xmlns:u="sap.ui.unified" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core"
+	xmlns:t="sap.ui.table" xmlns:tnt="sap.tnt" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="viewPadding">
+	<App id="app">
+		<pages >
+			<Page>
+				<headerContent>
+					<Toolbar class="Header_Bar">
+						<Image src="/webapp/image/blackbird_logo.png" press="onMenuClick"/>
+						<ToolbarSpacer/>
+						<Text text="Sign Up" class="Header_Text"/>
+						<ToolbarSpacer/>	<ToolbarSpacer/>
+					</Toolbar>
+				</headerContent>
+				<content >
+					<l:Grid defaultSpan="L3 M3 S3">
+						<l:content >
+							<Panel backgroundDesign="Transparent"></Panel>
+							<Panel backgroundDesign="Solid" class="sapUiLargeMarginTop">
+								<layoutData>
+									<l:GridData span="L6 M6 S6"></l:GridData>
+								</layoutData>
+								<Label text="First Name" required="true"/>
+								<Input id="ff" type="Email"></Input>
+								<Label text="Last Name" required="true"/>
+								<Input id="ll" type="Email"></Input>
+								<Label text="Email" required="true"/>
+								<Input id="e" type="Email"></Input>
+								<Label text="Password" required="true"/>
+								<Input type="Password" id="p"></Input>
+								<Button text="Sign Up" press="onSignUp" class="Header_Text Header_Button"></Button>
+								<Button text="Cancel" press="onCancel" class="sapUiSmallMarginBegin Header_Text Header_Button"></Button>
+							</Panel>
+							<Panel backgroundDesign="Transparent"></Panel>
+						</l:content>
+					</l:Grid>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

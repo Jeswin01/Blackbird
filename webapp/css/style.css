@@ -1,0 +1,193 @@
+/*Enter your custom styles here */
+
+.Header_Bar {
+    background-color: #2f7d2c !important;
+    border: #2f7d2c !important;
+}
+
+.Header_Text {
+    font-size: 15px;
+    color: #fff !important;
+}
+
+.Header_Compare_Text {
+    font-size: 14px;
+    color: #fff !important;
+}
+
+.Header_Icon {
+    size: 14px;
+    color: #fff;
+}
+
+.Header_Icon.sapUiIcon:focus {
+    outline: none;
+}
+
+.Main_Content {
+    background-color: #fff;
+}
+
+.Dashboard_Image {
+    margin-top: 10%;
+    width: 100%;
+}
+
+.Dynamic_Side_Content {
+    overflow-x: none !important;
+    overflow-y: none !important;
+}
+
+.Header_Button .sapMBtnInner {
+    background-color: #304e2f !important;
+    color: #fff !important;
+}
+
+
+html.sap-desktop .sapMLnk:focus:not(.sapMLnkDsbl) {
+    outline: none;
+    text-decoration: none;
+}
+
+html.sap-desktop .sapMLnk:hover:not(.sapMLnkDsbl) {
+    text-decoration: none;
+}
+
+.sapMBarRight,
+.sapMBarPH {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.News_Feed.sapMFeedListItemImageInactive,
+.sapMFeedListItemImage {
+    visibility: hidden;
+}
+
+.Header_Button.sapMBtnInner {
+    background-color: #304e2f !important;
+    color: #fff !important;
+}
+
+html.sap-desktop .sapMInputBaseInner:not(.sapMInputBaseReadonlyInner):focus {
+    outline: 1px dotted transparent !important;
+    outline-offset: -3px !important;
+}
+
+html.sap-desktop .sapMSlt:not(.sapMSltExpanded):not(.sapMSltDisabled):not(.sapMSltState):focus .sapMSltLabel,
+html.sap-desktop .sapMSlt:not(.sapMSltExpanded):not(.sapMSltDisabled):not(.sapMSltState):focus .sapMSltIcon {
+    outline-offset: -3px !important;
+    outline: #fff dotted 1px !important;
+}
+
+html.sap-desktop .sapMBtn:focus>.sapMBtnActive.sapMFocusable {
+    outline-color: transparent !important;
+}
+
+
+/******************** SIDE NAVIGATION BAR *********************/
+
+.Master_LeftSide .sapMSplitContainerMaster {
+    background-color: #97AAA0;
+}
+
+.Side_Navigation .sapMList .sapMListUl .sapMLIB {
+    background-color: #97AAA0;
+    border-bottom: 1px solid #7d8682;
+}
+
+.Side_Navigation_Icon .sapMLIBContent .sapMSLIImgIcon {
+    color: #fff;
+    font-size: 16px;
+}
+
+.Side_Navigation_Text .sapMLIBContent .sapMSLITitleDiv .sapMSLITitleOnly {
+    color: #fff;
+    font-size: 14px;
+}
+
+.sapMLIBHoverable:hover {
+    background: #6E8573 !important;
+}
+
+.sapMLIB.sapMLIBActive {
+    color: #fff;
+    background: #6E8573 !important;
+}
+
+.Side_Navigation_Active {
+    background: #6e8573;
+}
+
+
+/******************** DOTTED BORDERS OF CONTROLS *********************/
+
+.sapMLIBFocusable:focus {
+    outline: 1px dotted transparent;
+    outline-offset: -1px;
+}
+
+.sapUiIcon:focus {
+    outline: none;
+}
+
+.sapContrast.sapUiIcon:focus,
+.sapContrast .sapUiIcon:focus {
+    outline: 1px dashed transparent;
+}
+
+html.sap-desktop .sapMBtn:focus>.sapMFocusable {
+    outline: 1px dotted transparent !important;
+}
+
+html.sap-desktop .sapContrast .sapMBtn:focus>.sapMBtnActive.sapMFocusable,
+html.sap-desktop .sapContrast.sapMBtn:focus>.sapMBtnActive.sapMFocusable {
+    outline-color: transparent !important;
+}
+
+html.sap-desktop .sapContrast .sapMBtn:focus>.sapMFocusable,
+html.sap-desktop .sapContrast.sapMBtn:focus>.sapMFocusable {
+    outline: 1px dotted transparent !important;
+}
+
+
+******************* RIGHT SIDE NEWS ********************
+
+.Feed_News .sapMListUl .sapMLIB .sapMFeedListItem .sapMFeedListItemText {
+    margin-left: 0rem;
+}
+
+.sapMFeedListItemFigure {
+    display: none;
+}
+
+.Feed_News .sapMListUl .sapMLIB {
+    border-bottom: 1px solid #fff;
+}
+
+.Feed_News .sapMListUl .sapMLIB .sapMFeedListItem .sapMFeedListItemText .sapMFeedListItemTextText .sapMFeedListItemTextName .sapMLnk {
+    font-size: 16px;
+    color: #191919;
+    font-weight: 400;
+    display: block;
+}
+
+.Feed_News .sapMListUl .sapMLIB .sapMFeedListItem .sapMFeedListItemText .sapMFeedListItemTextText .sapMFeedListItemTextString {
+    font-size: 13px;
+    color: #5a5a5a;
+    line-height: 20px;
+}
+
+.Feed_News .sapMListUl .sapMLIB .sapMFeedListItem .sapMFeedListItemText .sapMFeedListItemFooter .sapMFeedListItemTimestampText {
+    font-size: 12px;
+    color: #5d5d5d;
+}
+
+.Feed_News {
+    background-color: #fff;
+    border-left: 1px solid #e5e5e5;
+}
+
+.sapMListHdr {
+    border-bottom: 1px solid #e5e5e5;
+}
